@@ -23,6 +23,7 @@
   "homepage": "https://github.com/satyapackirisamy/node-google-translator#readme",
   "dependencies": {
     "config": "^3.3.7",
+    "express": "^4.18.1",
     "google-translate": "^2.2.0",
     "underscore": "^1.13.4"
   }

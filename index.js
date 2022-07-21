@@ -13,7 +13,7 @@ googleTranslate.translate(text, 'es', function(err, translation){
 	console.log("Spanish:>", translation.translatedText);
 });
 
-app.get('/translate', function(req, res)=>{
+app.get('/translate', (req, res)=>{
 	res.send("Welcome to translation")
 });
 
