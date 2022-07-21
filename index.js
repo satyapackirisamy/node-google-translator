@@ -1,6 +1,6 @@
 const config = require('config')
 const gApi = config.get('google_api_key');
-const googleTranslate = require('google-translate')(gApi)
+const googleTranslate = require('google-translate')(process.env.google_api_key)
 const express = require('express');
 const app = express();
 const port = 8002;
@@ -16,4 +16,3 @@ googleTranslate.translate(text, 'es', function(err, translation){
 app.get('/translate', (req, res)=>{
 	res.send("Welcome to translation")
 });
-
