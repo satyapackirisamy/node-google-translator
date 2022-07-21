@@ -6,7 +6,7 @@ const app = express();
 const port = 8002;
 
 //app.listen(port, ()=>console.log(`Listening to the port ${port}`));
-app.listen(process.env.PORT, '0.0.0.0', ()=>console.log('Server is up and running!!'))
+app.listen(process.env.PORT, '0.0.0.0', ()=>console.log(`Listening to the port ${port}. Server is up and running!!`))
 var text = "Hello, This is Sathya Prakash from Chennai. I'm learning NLP using Node Js";
 console.log("English: >",text)
 googleTranslate.translate(text, 'es', function(err, translation){
